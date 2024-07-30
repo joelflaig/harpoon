@@ -98,7 +98,7 @@ function HarpoonUI:_create_window(toggle_opts)
     local bufnr = vim.api.nvim_create_buf(false, true)
     local win_id = vim.api.nvim_open_win(bufnr, true, {
         relative = "editor",
-        title = toggle_opts.title or "Harpoon",
+        title = toggle_opts.title or "─Harpoon",
         title_pos = toggle_opts.title_pos or "left",
         row = math.floor(((vim.o.lines - height) / 2) - 1),
         col = math.floor((vim.o.columns - width) / 2),
