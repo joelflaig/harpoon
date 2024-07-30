@@ -105,7 +105,7 @@ function HarpoonUI:_create_window(toggle_opts)
         width = width,
         height = height,
         style = "minimal",
-        border = toggle_opts.border or "single",
+        border = toggle_opts.border or "rounded",
     })
 
     if win_id == 0 then
